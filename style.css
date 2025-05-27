@@ -1,91 +1,91 @@
-/* Estilização global do corpo da página */
+
 body {
-    margin: 0; /* Remove margens do navegador */
-    font-family: 'Segoe UI', Arial, sans-serif; /* Fonte moderna e fácil de ler */
-    background: #f9f9fc; /* Fundo claro */
-    color: #222; /* Cor de texto principal */
+    margin: 0; 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    background: #f9f9fc;
+    color: #222; 
 }
 
-/* Container centralizado e com largura máxima definida */
+
 .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-/* Barra de navegação no topo */
+
 nav {
-    background: #1a237e; /* Azul escuro */
-    color: #fff; /* Letras brancas */
+    background: #1a237e; 
+    color: #fff; 
     padding: 0.5rem 0;
 }
 
-/* Nome/logo à esquerda da barra de navegação */
+
 nav .logo {
     font-weight: bold;
     font-size: 1.2rem;
     margin-right: 2rem;
 }
 
-/* Lista de links do menu, lado a lado */
+
 nav ul {
-    list-style: none; /* Remove marcadores da lista */
+    list-style: none; 
     padding-left: 0;
-    display: flex; /* Itens em linha */
-    gap: 1rem;     /* Espaçamento entre os itens */
+    display: flex; 
+    gap: 1rem;    
     margin: 0;
 }
 
-/* Layout flexível para organizar logo e links do menu */
+
 nav .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Links do menu: sem sublinhado e transição de cor ao passar o mouse */
+
 nav a {
     color: #fff;
     text-decoration: none;
     transition: color 0.2s;
 }
 
-/* Cor dos links ao passar o mouse */
+
 nav a:hover {
     color: #ffd600;
 }
 
-/* Seção de destaque inicial */
+
 .hero {
-    background: linear-gradient(90deg, #3949ab 60%, #fffde7 100%); /* Degradê azul para claro */
+    background: linear-gradient(90deg, #3949ab 60%, #fffde7 100%);
     color: #fff;
     padding: 2.5rem 0 1.5rem 0;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-/* Área principal do currículo */
+
 main {
     background: #fff;
-    border-radius: 12px; /* Bordas arredondadas */
-    box-shadow: 0 2px 12px rgba(58,58,100,0.08); /* Sombra suave */
+    border-radius: 12px; 
+    box-shadow: 0 2px 12px rgba(58,58,100,0.08); 
     padding: 2rem 1rem;
     margin-bottom: 2rem;
 }
 
-/* Títulos das seções */
+
 h1, h2 {
     color: #1a237e;
     margin-bottom: 0.7em;
 }
 
-/* Listas padrão (experiências, etc.) */
+
 ul {
     padding-left: 1.3em;
     margin-bottom: 1em;
 }
 
-/* Rodapé estilizado */
+
 footer {
     background: #1a237e;
     color: #fff;
@@ -95,36 +95,36 @@ footer {
     font-size: 0.95rem;
 }
 
-/* Links no rodapé em amarelo */
+
 footer a {
     color: #ffd600;
     text-decoration: none;
 }
 
-/* Estilo para a lista de projetos do GitHub */
+
 #github-projects ul {
     list-style-type: square;
     padding-left: 1.3em;
 }
 
-/* Espaçamento entre os itens dos projetos */
+
 #github-projects li {
     margin-bottom: 0.5em;
 }
 
-/* === ESTILO DA FOTO DE PERFIL === */
+
 .foto-perfil {
-    display: block;                 /* Faz a imagem se comportar como bloco */
-    margin: 0 auto 1.2rem auto;     /* Centraliza e adiciona espaço abaixo */
-    width: 140px;                   /* Largura fixa */
-    height: 140px;                  /* Altura fixa */
-    border-radius: 50%;             /* Torna a imagem redonda */
-    object-fit: cover;              /* Garante que a imagem preencha o círculo */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.14); /* Sombra suave */
-    border: 4px solid #1a237e;      /* Borda azul elegante */
+    display: block;                
+    margin: 0 auto 1.2rem auto;     
+    width: 140px;                   
+    height: 140px;              
+    border-radius: 50%;          
+    object-fit: cover;             
+    box-shadow: 0 2px 8px rgba(0,0,0,0.14);
+    border: 4px solid #1a237e;
 }
 
-/* Responsividade para telas pequenas (celular) */
+
 @media (max-width: 600px) {
     nav .container, main.container, footer .container {
         padding: 0 0.5rem;
@@ -143,7 +143,7 @@ footer a {
         padding: 1rem 0.3rem;
     }
     .foto-perfil {
-        width: 100px;   /* Reduz o tamanho da foto no mobile */
+        width: 100px;   
         height: 100px;
     }
 }
